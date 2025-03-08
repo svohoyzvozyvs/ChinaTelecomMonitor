@@ -22,7 +22,7 @@
 拉库命令：
 
 ```
-ql repo https://github.com/Cp0204/ChinaTelecomMonitor.git "telecom_monitor" "" "telecom_class|notify"
+ql repo https://github.com/svohoyzvozyvs/ChinaTelecomMonitor.git "telecom_monitor" "" "telecom_class|notify"
 ```
 
 | 环境变量       | 示例                  | 备注                           |

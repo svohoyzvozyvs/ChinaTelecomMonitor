@@ -71,15 +71,15 @@ def main():
     telecom = Telecom()
 
     def auto_login():
-        if TELECOM_USER := os.environ.get("TELECOM_USER"):
+        if TELECOM_USER1 := os.environ.get("TELECOM_USER1"):
             phonenum, password = (
-                TELECOM_USER[:11],
-                TELECOM_USER[11:],
+                TELECOM_USER1[:11],
+                TELECOM_USER1[11:],
             )
-        elif TELECOM_USER := CONFIG_DATA.get("user", {}):
+        elif TELECOM_USER1 := CONFIG_DATA.get("user", {}):
             phonenum, password = (
-                TELECOM_USER.get("phonenum", ""),
-                TELECOM_USER.get("password", ""),
+                TELECOM_USER1.get("phonenum", ""),
+                TELECOM_USER1.get("password", ""),
             )
         else:
             exit("自动登录：未设置账号密码，退出")
